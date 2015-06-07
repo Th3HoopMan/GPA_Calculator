@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">GPA Calculator</string>
+
+    <string name="Class_Name">Class Name</string>
+    <string name="Credits">Credits</string>
+    <string name="Grade">Grade</string>
+
+    <string name="Num1">1.</string>
+    <string name="Num2">2.</string>
+    <string name="Num3">3.</string>
+    <string name="Num4">4.</string>
+    <string name="Num5">5.</string>
+    <string name="Num6">6.</string>
+
+    <string name="Class1">Class 1</string>
+    <string name="Class2">Class 2</string>
+    <string name="Class3">Class 3</string>
+    <string name="Class4">Class 4</string>
+    <string name="Class5">Class 5</string>
+    <string name="Class6">Class 6</string>
+
+    <string name="Credit1">0.0</string>
+
+    <string name="Calculate">Calculate</string>
+
+
+
+    <string name="Current_GPA">Previous GPA:</string>
+    <string name="Current_Credits">Previous Credits:</string>
+
+    <string name="Semester_GPA">Semester GPA:</string>
+    <string name="Overall_GPA">Overall GPA:</string>
+
+    <string name="Semester_GPANum">0.0</string>
+    <string name="Overall_GPANum">0.0</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
