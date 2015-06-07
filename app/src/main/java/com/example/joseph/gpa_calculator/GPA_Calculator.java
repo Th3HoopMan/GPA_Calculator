@@ -43,14 +43,12 @@ public class GPA_Calculator extends ActionBarActivity {
     TextView SemesterGPA, OverallGPA;
 
     EditText Previous_GPA, Previous_Credits;
-    private EditText et;
-    private int pos;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gpa__calculator);
+        setContentView(R.layout.editedlayout);
 
         //Setting each array to 99.99
         //zerOut();
@@ -133,8 +131,7 @@ public class GPA_Calculator extends ActionBarActivity {
 
     //adds a Listener to the EditText
     public void addListenerToET(final EditText et, final int pos) {
-        this.et = et;
-        this.pos = pos;
+
         et.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
