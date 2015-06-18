@@ -1,355 +1,383 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".GPA_Calculator"
-    style="@style/Theme.AppCompat"
-    android:id="@+id/RelativeLayout2">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/Class_Name"
-        android:id="@+id/ClassNameHeader"
-        android:textStyle="bold"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="30dp"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/Credits"
-        android:id="@+id/CreditsHeader"
-        android:textStyle="bold"
-        android:layout_toRightOf="@+id/ClassNameHeader"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="50dp"
-     />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/Grade"
-        android:id="@+id/GradeHeader"
-        android:textStyle="bold"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="20dp"
-        android:layout_toRightOf="@+id/CreditsHeader"
-        android:layout_marginLeft="30dp"
-    />
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ClassNameHeader"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="10dp"
-        android:columnCount="4"
-        android:rowCount="6"
-        android:orientation="horizontal"
-        android:id="@+id/CurrentClasses">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".GPA_Calculator"
+        android:id="@+id/RelativeLayout2"
+        android:clickable="false">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/Num1"
-            android:id="@+id/Num1"
-            android:textStyle="bold" />
-
-        <EditText
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/ClassET1"
-            android:layout_marginLeft="10dp"
-            android:inputType="text"
-            android:hint="@string/Class1" />
-
-        <EditText
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:inputType="number"
-            android:hint="@string/Credit1"
-            android:id="@+id/CreditET1"/>
-
-        <Spinner
-            android:layout_width="80dp"
-            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/Class_Name"
+            android:id="@+id/ClassNameHeader"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
             android:layout_marginLeft="30dp"
-            android:id="@+id/GradeSpinner1"
-            android:spinnerMode="dropdown"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/Credits"
+            android:id="@+id/CreditsHeader"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/ClassNameHeader"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
          />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/Num2"
-            android:id="@+id/Num2"
-            android:textStyle="bold" />
-
-        <EditText
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:id="@+id/ClassET2"
-            android:inputType="text"
-            android:hint="@string/Class2" />
-
-        <EditText
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:inputType="number"
-            android:id="@+id/CreditET2"
-            android:hint="@string/Credit1" />
-
-        <Spinner
-            android:layout_width="80dp"
-            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/Grade"
+            android:id="@+id/GradeHeader"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/CreditsHeader"
             android:layout_marginLeft="30dp"
-            android:spinnerMode="dropdown"
-            android:id="@+id/GradeSpinner2"
+        />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ClassNameHeader"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:columnCount="4"
+            android:rowCount="6"
+            android:orientation="horizontal"
+            android:id="@+id/CurrentClasses">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/Num1"
+                android:id="@+id/Num1"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ClassET1"
+                android:layout_marginLeft="10dp"
+                android:inputType="text"
+                android:hint="@string/Class1" />
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:hint="@string/Credit1"
+                android:id="@+id/CreditET1"/>
+
+            <Spinner
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/GradeSpinner1"
+                android:spinnerMode="dropdown"
              />
-        <TextView
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/Num2"
+                android:id="@+id/Num2"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ClassET2"
+                android:inputType="text"
+                android:hint="@string/Class2" />
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:id="@+id/CreditET2"
+                android:hint="@string/Credit1" />
+
+            <Spinner
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:spinnerMode="dropdown"
+                android:id="@+id/GradeSpinner2"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/Num3"
+                android:id="@+id/Num3"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ClassET3"
+                android:inputType="text"
+                android:hint="@string/Class3" />
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:id="@+id/CreditET3"
+                android:hint="@string/Credit1" />
+
+            <Spinner
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:spinnerMode="dropdown"
+                android:id="@+id/GradeSpinner3"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/Num4"
+                android:id="@+id/Num4"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ClassET4"
+                android:inputType="text"
+                android:hint="@string/Class4" />
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:id="@+id/CreditET4"
+                android:hint="@string/Credit1" />
+
+            <Spinner
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:spinnerMode="dropdown"
+                android:id="@+id/GradeSpinner4"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/Num5"
+                android:id="@+id/Num5"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ClassET5"
+                android:inputType="text"
+                android:hint="@string/Class5" />
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:id="@+id/CreditET5"
+                android:hint="@string/Credit1" />
+
+            <Spinner
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:spinnerMode="dropdown"
+                android:id="@+id/GradeSpinner5"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/Num6"
+                android:id="@+id/Num6"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ClassET6"
+                android:inputType="text"
+                android:hint="@string/Class6" />
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:id="@+id/CreditET6"
+                android:hint="@string/Credit1" />
+
+            <Spinner
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:spinnerMode="dropdown"
+                android:id="@+id/GradeSpinner6" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CurrentClasses"
+            android:layout_alignParentStart="true"
+            android:columnCount="4"
+            android:rowCount="1"
+            android:id="@+id/gridLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/Current_GPA"
+                android:id="@+id/textView10"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:id="@+id/Current_GPA"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/Current_Credits"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/editText2"
+
+                android:layout_marginLeft="10dp"/>
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:paddingTop="30dp"
+            android:columnCount="4"
+            android:rowCount="1"
+            android:id="@+id/Results">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/Semester_GPA"
+                android:id="@+id/textView12"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Semester_GPANum"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:id="@+id/SemesterGPATV"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/Overall_GPA"
+                android:id="@+id/textView13"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Overall_GPANum"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"
+                android:id="@+id/OverallGPATV"
+                android:layout_marginLeft="20dp"/>
+
+
+        </GridLayout>
+
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/Num3"
-            android:id="@+id/Num3"
+            android:text="@string/Calculate"
+            android:id="@+id/CalculateButton"
+            android:layout_below="@+id/Results"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="70dp"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
             android:textStyle="bold" />
 
-        <EditText
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:id="@+id/ClassET3"
-            android:inputType="text"
-            android:hint="@string/Class3" />
-
-        <EditText
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:inputType="number"
-            android:id="@+id/CreditET3"
-            android:hint="@string/Credit1" />
-
-        <Spinner
-            android:layout_width="80dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
-            android:spinnerMode="dropdown"
-            android:id="@+id/GradeSpinner3"
-            />
-
-        <TextView
+        <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/Num4"
-            android:id="@+id/Num4"
-            android:textStyle="bold" />
+            android:id="@+id/Settingsbtn"
+            android:background="@drawable/settingsicon"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/CalculateButton"
+            android:layout_marginTop="22dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/CalculateButton" />
 
-        <EditText
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:id="@+id/ClassET4"
-            android:inputType="text"
-            android:hint="@string/Class4" />
-
-        <EditText
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:inputType="number"
-            android:id="@+id/CreditET4"
-            android:hint="@string/Credit1" />
-
-        <Spinner
-            android:layout_width="80dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
-            android:spinnerMode="dropdown"
-            android:id="@+id/GradeSpinner4"
-            />
-
-        <TextView
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/Num5"
-            android:id="@+id/Num5"
-            android:textStyle="bold" />
-
-        <EditText
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:id="@+id/ClassET5"
-            android:inputType="text"
-            android:hint="@string/Class5" />
-
-        <EditText
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:inputType="number"
-            android:id="@+id/CreditET5"
-            android:hint="@string/Credit1" />
-
-        <Spinner
-            android:layout_width="80dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
-            android:spinnerMode="dropdown"
-            android:id="@+id/GradeSpinner5"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/Num6"
-            android:id="@+id/Num6"
-            android:textStyle="bold" />
-
-        <EditText
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:id="@+id/ClassET6"
-            android:inputType="text"
-            android:hint="@string/Class6" />
-
-        <EditText
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:inputType="number"
-            android:id="@+id/CreditET6"
-            android:hint="@string/Credit1" />
-
-        <Spinner
-            android:layout_width="80dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
-            android:spinnerMode="dropdown"
-            android:id="@+id/GradeSpinner6" />
-
-    </GridLayout>
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/CurrentClasses"
-        android:layout_alignParentStart="true"
-        android:columnCount="4"
-        android:rowCount="1"
-        android:id="@+id/gridLayout">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/Current_GPA"
-            android:id="@+id/textView10"
-            android:textStyle="bold" />
-
-        <EditText
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:id="@+id/Current_GPA"
-            android:layout_marginLeft="10dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/Current_Credits"
-            android:textStyle="bold"
-            android:layout_marginLeft="15dp"/>
-
-        <EditText
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:id="@+id/editText2"
-
-            android:layout_marginLeft="10dp"/>
-
-    </GridLayout>
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/gridLayout"
-        android:layout_alignParentStart="true"
-        android:paddingTop="30dp"
-        android:columnCount="4"
-        android:rowCount="1"
-        android:id="@+id/Results">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/Semester_GPA"
-            android:id="@+id/textView12"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:text="@string/Semester_GPANum"
-            android:textStyle="bold"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:id="@+id/SemesterGPATV"
-            android:layout_marginLeft="20dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/Overall_GPA"
-            android:id="@+id/textView13"
-            android:layout_marginLeft="10dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:text="@string/Overall_GPANum"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textStyle="bold"
-            android:id="@+id/OverallGPATV"
-            android:layout_marginLeft="20dp"/>
+            android:text="@string/Clear"
+            android:id="@+id/button"
+            android:onClick="clearFields"
+            android:layout_alignBottom="@+id/Settingsbtn"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/Settingsbtn"
+            android:layout_alignEnd="@+id/ClassNameHeader"
+            android:layout_marginEnd="64dp"
+            android:textSize="10sp"/>
 
 
-    </GridLayout>
+    </RelativeLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Calculate"
-        android:id="@+id/CalculateButton"
-        android:layout_below="@+id/Results"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="70dp"
-        android:paddingLeft="70dp"
-        android:paddingRight="70dp"
-        android:textStyle="bold" />
-
-
-</RelativeLayout>

@@ -16,4 +16,13 @@
         <item>F</item>
 
     </string-array>
+
+    <string-array name="grade_options2">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>F</item>
+
+    </string-array>
 </resources>
