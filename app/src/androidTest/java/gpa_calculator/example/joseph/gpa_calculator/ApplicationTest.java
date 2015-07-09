@@ -1,4 +1,4 @@
-package com.example.joseph.gpa_calculator;
+package gpa_calculator.example.joseph.gpa_calculator;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

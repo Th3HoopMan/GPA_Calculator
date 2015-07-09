@@ -1,9 +1,9 @@
 package com.example.joseph.gpa_calculator;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.preference.Preference;
 import android.preference.PreferenceActivity;
+
+import com.joeforbroke.gpa_calculator.R;
 
 /**
  * Created by Joseph on 6/18/2015.
